@@ -3,7 +3,7 @@ import Container from '../Container'
 import Image from '../Image'
 import Product from '../Product'
 import ione from '/src/assets/iOne.png'
-import itwo from '/src/assets/itwo.png'
+import itww from '/src/assets/itwo.png'
 import ithree from '/src/assets/ithree.png'
 import ifore from '/src/assets/ifore.png'
 import ifive from '/src/assets/ifive.png'
@@ -30,7 +30,7 @@ const Trendy = () => {
         </ul>
         <div className="flex items-center justify-between gap-x-4 mt-10">
           <Product productImg={ione} title={"Cropped Faux Leather Jacket"} price={"$29"}/>
-          <Product productImg={itwo} title={"Calvin Shorts"} price={"$62"}/>
+          <Product productImg={itww} title={"Calvin Shorts"} price={"$62"}/>
           <Product productImg={ithree} title={"Kirby T-Shirt"} price={"$17"}/>
           <Product productImg={ifore} title={"Cableknit Shawl"} price={"$99"}/>
         </div>
