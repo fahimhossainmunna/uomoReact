@@ -5,7 +5,7 @@ import Badge from './Badge'
 const Product = ({productImg,title,price}) => {
   return (
     <>
-    <div className="">
+    <div className="mx-3">
 
     <Image imgSrc={productImg}/>
     <Badge className={'flex items-center justify-between text-[14px] leading-[24px] text-[#767676]'}/>

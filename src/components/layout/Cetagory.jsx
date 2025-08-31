@@ -25,7 +25,7 @@ const Cetagory = () => {
             </div>
             <div className="w-[49%]">
                 <Image imgSrc={men}/>
-                <div className="w-[49%] flex items-center justify-between gap-x-6 mt-6">
+                <div className="w-[49%] flex items-center justify-between gap-x-4 mt-6">
                       <Image imgSrc={kids}/>
                       <Image imgSrc={card}/>
                     
