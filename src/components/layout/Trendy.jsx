@@ -91,14 +91,14 @@ const Trendy = () => {
                 <Product
                   productImg={ifore}
                   title={"Cableknit Shawl"}
-                  price={"$99"}
+                  price={"$29"}
                 />
               </div>
               <div>
                 <Product
                   productImg={ione}
                   title={"Cropped Faux Leather Jacket"}
-                  price={"$29"}
+                  price={"$62"}
                 />
               </div>
               <div>
@@ -117,21 +117,22 @@ const Trendy = () => {
                 <Product
                   productImg={ifive}
                   title={"Colorful Jacket"}
-                  price={"$29"}
+                  oldPrice={"$120"}
+                  newPrice={"$56"}
                 />
               </div>
               <div>
                 <Product
                   productImg={isix}
                   title={"Shirt In Botanical Cheetah Print"}
-                  price={"$29"}
+                  newPrice={"$26"}
                 />
               </div>
               <div>
                 <Product
                   productImg={iseven}
                   title={"Cotton Jersey T-Shirt"}
-                  price={"$29"}
+                  price={"$45"}
                 />
               </div>
               <div>

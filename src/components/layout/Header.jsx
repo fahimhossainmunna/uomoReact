@@ -72,9 +72,9 @@ const Header = () => {
             <AnimatePresence>
         {menuOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -20 }}   // suru te transparent + upore
-            animate={{ opacity: 1, y: 0 }}     // open hobe niche namte namte
-            exit={{ opacity: 0, y: -20 }}      // close korle abar upore uthe jabe
+            initial={{ opacity: 0, y: -20 }}   
+            animate={{ opacity: 1, y: 0 }}     
+            exit={{ opacity: 0, y: -20 }}      
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="absolute right-5 mt-3 w-48 bg-[#3C2920] text-white shadow-lg rounded-lg p-4 z-50"
           >
