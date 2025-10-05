@@ -7,35 +7,36 @@ import men from "/src/assets/mONe.png"
 import kids from "/src/assets/kOne.png"
 import card from "/src/assets/eCard.png"
 
-
-
-
 // =================
 
 const Cetagory = () => {
   return (
-   <>
-   <div className="py-[100px]">
+    <>
+      <div className="py-[100px]">
+        <Container>
+          <Flex>
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+              
+              {/* Left - Women */}
+              <div className="w-full lg:w-[49%]">
+                <Image imgSrc={women} className="w-full" />
+              </div>
 
-   <Container>
-    <Flex>
-        <div className="flex items-center justify-between">
-            <div className="w-[49%]">
-                <Image imgSrc={women} className={'w-full'}/>
-            </div>
-            <div className="w-[49%]">
-                <Image imgSrc={men}/>
-                <div className="w-[49%] flex items-center justify-between gap-x-4 mt-6">
-                      <Image imgSrc={kids}/>
-                      <Image imgSrc={card}/>
-                    
+              {/* Right - Men + Kids + Card */}
+              <div className="w-full lg:w-[49%] flex flex-col gap-6">
+                <Image imgSrc={men} className="w-full" />
+                
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+                  <Image imgSrc={kids} className="w-full sm:w-[49%]" />
+                  <Image imgSrc={card} className="w-full sm:w-[49%]" />
                 </div>
+              </div>
+
             </div>
-        </div>
-    </Flex>
-   </Container>
-   </div>
-   </>
+          </Flex>
+        </Container>
+      </div>
+    </>
   )
 }
 

@@ -28,37 +28,53 @@ const Trendy = () => {
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024, // laptop
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768, // tablet
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480, // mobile
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
+
   return (
     <>
       <div className="py-[50px]">
         <Container>
-          <h1 className="text-[35px] text-center">
-            OUR TRENDY <span className="font-bold text-[35px]">PRODUCTS</span>
+          <h1 className="text-[28px] md:text-[35px] text-center">
+            OUR TRENDY{" "}
+            <span className="font-bold text-[28px] md:text-[35px]">
+              PRODUCTS
+            </span>
           </h1>
-          <ul className="flex items-center justify-center gap-x-10 ] mt-5">
-            <li
-              className="text-[16px] font-medium text-[#767676] hover:font-semibold
-        hover:text-[#222222] duration-500"
-            >
+
+          <ul className="flex flex-wrap items-center justify-center gap-x-6 md:gap-x-10 mt-5 text-center">
+            <li className="text-[14px] md:text-[16px] font-medium text-[#767676] hover:font-semibold hover:text-[#222222] duration-500 cursor-pointer">
               ALL
             </li>
-            <li
-              className="text-[16px] font-medium text-[#767676] hover:font-semibold
-        hover:text-[#222222] duration-500"
-            >
-              NEWARRIVALS
+            <li className="text-[14px] md:text-[16px] font-medium text-[#767676] hover:font-semibold hover:text-[#222222] duration-500 cursor-pointer">
+              NEW ARRIVALS
             </li>
-            <li
-              className="text-[16px] font-medium text-[#767676] hover:font-semibold
-        hover:text-[#222222] duration-500"
-            >
+            <li className="text-[14px] md:text-[16px] font-medium text-[#767676] hover:font-semibold hover:text-[#222222] duration-500 cursor-pointer">
               BEST SELLER
             </li>
-            <li
-              className="text-[16px] font-medium text-[#767676] hover:font-semibold
-        hover:text-[#222222] duration-500"
-            >
+            <li className="text-[14px] md:text-[16px] font-medium text-[#767676] hover:font-semibold hover:text-[#222222] duration-500 cursor-pointer">
               TOP RATING
             </li>
           </ul>
@@ -74,25 +90,13 @@ const Trendy = () => {
                 />
               </div>
               <div>
-                <Product
-                  productImg={itww}
-                  title={"Calvin Shorts"}
-                  price={"$62"}
-                />
+                <Product productImg={itww} title={"Calvin Shorts"} price={"$62"} />
               </div>
               <div>
-                <Product
-                  productImg={ithree}
-                  title={"Kirby T-Shirt"}
-                  price={"$17"}
-                />
+                <Product productImg={ithree} title={"Kirby T-Shirt"} price={"$17"} />
               </div>
               <div>
-                <Product
-                  productImg={ifore}
-                  title={"Cableknit Shawl"}
-                  price={"$29"}
-                />
+                <Product productImg={ifore} title={"Cableknit Shawl"} price={"$29"} />
               </div>
               <div>
                 <Product
@@ -102,14 +106,11 @@ const Trendy = () => {
                 />
               </div>
               <div>
-                <Product
-                  productImg={ithree}
-                  title={"Kirby T-Shirt"}
-                  price={"$17"}
-                />
+                <Product productImg={ithree} title={"Kirby T-Shirt"} price={"$17"} />
               </div>
             </Slider>
           </div>
+
           {/* =========== */}
           <div className="-mx-3 py-8">
             <Slider {...settings}>
@@ -136,11 +137,7 @@ const Trendy = () => {
                 />
               </div>
               <div>
-                <Product
-                  productImg={ieight}
-                  title={"Zessi Dresses"}
-                  price={"$29"}
-                />
+                <Product productImg={ieight} title={"Zessi Dresses"} price={"$29"} />
               </div>
               <div>
                 <Product
@@ -150,11 +147,7 @@ const Trendy = () => {
                 />
               </div>
               <div>
-                <Product
-                  productImg={ieight}
-                  title={"Zessi Dresses"}
-                  price={"$29"}
-                />
+                <Product productImg={ieight} title={"Zessi Dresses"} price={"$29"} />
               </div>
             </Slider>
           </div>
